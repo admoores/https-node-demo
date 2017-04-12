@@ -38,7 +38,11 @@ app.get('*', (req, res) => {
 const httpRedirect = express();
 
 httpRedirect.get('*', (req, res) => {
-  res.redirect('https://' + domainName + req.url);
+  if (port === 443) {
+    res.redirect('https://' + domainName + req.url);
+  } else {
+    res.redirect('https://' + domainName + ':' + port + req.url);
+  }
   console.log('HTTP request made, redirected to HTTPS');
 });
 
