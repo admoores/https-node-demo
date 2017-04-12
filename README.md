@@ -8,7 +8,7 @@ This repo is intended to accompany my tutorial post over on [Medium](https://med
   - run `npm install` to get all your packages installed
   - edit line 13 in `server/app.js` to your domain
 
-### Setting up your keys
+### Setting up your certificate and keys
 - Install certbot
 - Ensure you have port 443 open to the outside world
 - Run Certbot
