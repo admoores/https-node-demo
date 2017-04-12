@@ -1,7 +1,7 @@
 # https-node-demo
 
 ### More Information
-This repo is intended to accompany my tutorial post over on [Medium]()
+This repo is intended to accompany my tutorial post over on [Medium](https://medium.com/@moores.alexd/setting-up-a-node-express-app-with-https-c36ca0537757)
 
 ### Getting Started
 - Once you fork/clone the repo:
@@ -20,5 +20,5 @@ This repo is intended to accompany my tutorial post over on [Medium]()
 
 ### Running the Server
 - run `sudo node server/app.js` from the main project directory
-  - You will need to run this as root because by default only root can read the key files
+  - You will need to run this as root because by default only root can read the key files, and only root can run processes on default ports like 80 and 443
   - Some linux servers will use the command `nodejs` instead of node
