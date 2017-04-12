@@ -1,0 +1,25 @@
+{
+  "name": "https-node-demo",
+  "version": "1.0.0",
+  "description": "A quick and dirty demo of setting up an HTTPS backend with Node and Express",
+  "main": "server/app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admoores/https-node-demo.git"
+  },
+  "author": "Alex D. Moores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/admoores/https-node-demo/issues"
+  },
+  "homepage": "https://github.com/admoores/https-node-demo#readme"
+}
