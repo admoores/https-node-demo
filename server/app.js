@@ -38,9 +38,9 @@ app.get('*', (req, res) => {
 const httpRedirect = express();
 
 httpRedirect.get('*', (req, res) => {
-  if (port === 443) {
+  if (port === 443) { // If using default HTTPS port, then omits port from redirect
     res.redirect('https://' + domainName + req.url);
-  } else {
+  } else { // Otherwise, will append port for you
     res.redirect('https://' + domainName + ':' + port + req.url);
   }
   console.log('HTTP request made, redirected to HTTPS');
