@@ -21,4 +21,4 @@ This repo is intended to accompany my tutorial post over on [Medium](https://med
 ### Running the Server
 - run `sudo node server/app.js` from the main project directory
   - You will need to run this as root because by default only root can read the key files, and only root can run processes on default ports like 80 and 443
-  - Some linux servers will use the command `nodejs` instead of node
+  - Some linux servers will use the command `nodejs` instead of `node`
