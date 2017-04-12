@@ -17,3 +17,8 @@ This repo is intended to accompany my tutorial post over on [Medium]()
   - Keep note of the location of your key/cert files
     - The default is the directory `/etc/letsencrypt/live/*_DOMAIN_*/`
     - If yours are in a location other than the default, you'll have to modify lines 15 and 16 in `server/app.js`
+
+### Running the Server
+- run `sudo node server/app.js` from the main project directory
+  - You will need to run this as root because by default only root can read the key files
+  - Some linux servers will use the command `nodejs` instead of node
