@@ -11,6 +11,10 @@ const cert = fs.readFileSync('/etc/letsencrypt/live/' + domainName + '/fullchain
 
 const app = express();
 
+app.get('*', (req, res) => {
+  res.send('Hello from my secure server!');
+});
+
 const server = https.createServer({
   key: key,
   cert: cert
